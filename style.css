@@ -1,15 +1,101 @@
 body {
 	background: #eaeaea;
-	border: 1px solid #162d04;
-	padding: 5px;
 	font-family: Inter;
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 24px;
-	letter-spacing: 0em;
-	text-align: left;
 	text-transform: uppercase;
 }
-h1 {
+h1,
+h2,
+h3,
+h4 {
 	margin: 0;
+}
+h1 {
+}
+h2 {
+	size: 20px;
+}
+p {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.container {
+	position: relative;
+	padding: 80px 5px 5px 5px;
+	max-width: 100%;
+	max-height: fit-content;
+	border-bottom: 1px solid #162d04;
+}
+.color-circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background: radial-gradient(
+		circle at var(--x) var(--y),
+		#162d04 0%,
+		transparent 20%
+	);
+	opacity: 40%;
+}
+.m-logo {
+	padding: 5px;
+	max-width: 80%;
+}
+.navbar {
+	background-color: #eaeaea;
+	border-bottom: 1px solid #162d04;
+	margin: 0 auto;
+	padding: 0px;
+}
+.navbar-brand {
+	margin: 0px;
+	padding: 0px;
+}
+.nav-link:hover {
+	font-weight: 300;
+	color: #162d04;
+}
+.background-image {
+	border: none;
+}
+.navbar-toggler-icon {
+	background-image: url(/images/burger_menu.png);
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+.down-footer {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 55px;
+	border-top: 1px solid #162d04;
+	bottom: 0;
+}
+.footer-link {
+	color: rgba(0, 0, 0, 0.65);
+	text-decoration: none;
+	padding: 8px;
+}
+.footer-link:hover {
+	color: rgba(0, 0, 0, 0.8);
+}
+.about-link {
+	color: rgba(0, 0, 0, 0.65);
+	text-decoration: none;
+}
+.about-link:hover {
+	color: #162d04;
 }
