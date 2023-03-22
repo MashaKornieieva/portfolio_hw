@@ -16,8 +16,14 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://kit.fontawesome.com/7b5bde78df.js"
+			crossorigin="anonymous"
+		></script>
+
 		<title>Motsion</title>
 	</head>
+	<link rel="icon" href="/images/favicon.png" />
 	<body>
 		<nav class="navbar fixed-top navbar-expand-md">
 			<a class="navbar-brand" href="#"
@@ -41,79 +47,267 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="/artists.html">artists</a>
+						<a class="nav-link" href="/#about">about</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/events.html">events</a>
+						<a class="nav-link" href="/index.html#events">events</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/contact.html">contact</a>
+						<a class="nav-link" href="/index.html#contact">contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<div class="container">
-			<div class="color-circle"></div>
-			<script type="text/javascript">
-				var pos = document.documentElement;
-				pos.addEventListener("mousemove", (e) => {
-					pos.style.setProperty("--x", e.clientX + "px");
-					pos.style.setProperty("--y", e.clientY + "px");
-				});
-			</script>
-			<div class="about-info">
-				<p>
-					Motsion was one of the first musical events that began charitable
-					activities in Kyiv after the beginning of the full-scale russian
-					invasion of Ukraine.
-				</p>
-				<p>
-					It felt like a stroll in the fresh air to rest and renew your
-					self-strength purposes. And now we became a borderless
-					multidisciplinary formation focusing on audio and visual performances
-					curated by
+		<div class="ticker-container" id="about">
+			<div class="updates-ticker">
+				<span> 19/03 4PM Local Stickerbook x Motsion x Takk-R, Budapest </span>
+				<span> 19/03 4PM Local Stickerbook x Motsion x Takk-R, Budapest </span>
+			</div>
+		</div>
+		<div class="hero-container">
+			<div class="color-circle">
+				<script type="text/javascript">
+					var pos = document.documentElement;
+					pos.addEventListener("mousemove", (e) => {
+						pos.style.setProperty("--x", e.clientX + "px");
+						pos.style.setProperty("--y", e.clientY + "px");
+					});
+				</script>
+			</div>
+			<p></p>
+			<div>
+				<h1 class="heading">
+					textures, heavy low frequencies & strong emotional charge
+				</h1>
+			</div>
+			<p class="title3">
+				Motsion was one of the first musical events that began charitable
+				activities in Kyiv after the beginning of the full-scale russian
+				invasion of Ukraine. It felt like a stroll in the fresh air to rest and
+				renew your self-strength purposes. And now we became a borderless
+				multidisciplinary formation focusing on audio and visual performances
+				curated by
+				<a
+					class="link"
+					target="_blank"
+					href="https://www.instagram.com/_andriy_kostyukov/"
+					>Andriy Kostyukov</a
+				>
+				and
+				<a
+					class="link"
+					target="_blank"
+					href="https://www.instagram.com/axtaxtaxtaxtaxtaxtaxtaxt/"
+					>AXT</a
+				>
+			</p>
+		</div>
+		<div class="event-container row event-row" id="events">
+			<div>
+				<h1>Events/Shows</h1>
+			</div>
+			<div class="col">
+				<a
+					class="link"
+					target="_blank"
+					href="https://radiopunctum.cz/archive/20230313_motsion"
+				>
+					<img width="100%" src="/images/punctum.png" />
+					<p class="title4 link">Bi-Monthly show on Punctum</p></a
+				>
+				<p class="title5">Prague, Czech Republic</p>
+			</div>
+		</div>
+		<div class="row event-row">
+			<div class="col">
+				<a class="link" target="_blank" href="https://ra.co/events/1627828">
+					<img width="100%" src="/images/fitzroy.png" />
+					<p class="title4 link">Fitzroy</p></a
+				>
+				<p class="title5">Berlin, Germany</p>
+			</div>
+
+			<div class="col">
+				<a class="link" target="_blank" href="https://fb.me/e/3e8MnVFCU">
+					<img width="100%" src="/images/bb.png" />
+					<p class="title4 link">Between Bridges</p></a
+				>
+				<p class="title5">Berlin, Germany</p>
+			</div>
+
+			<div class="col">
+				<a class="link" target="_blank" href="https://ra.co/events/1675374">
+					<img width="100%" src="/images/golya.png" />
+					<p class="title4 link">Golya</p></a
+				>
+				<p class="title5">Budapest, Hungary</p>
+			</div>
+		</div>
+		<div class="row event-row">
+			<div class="col">
+				<img width="100%" src="/images/hoer.png" />
+				<p class="title4 link" id="showmore_hoer">HÖR</p>
+				<p class="title5">Berlin, Germany</p>
+			</div>
+			<div class="col">
+				<img width="100%" src="/images/refuge.png" />
+				<p class="title4 link" id="showmore_refuge">Refuge Worldwide</p>
+				<p class="title5">Berlin, Germany</p>
+			</div>
+			<div class="col">
+				<img width="100%" src="/images/takkr.png" />
+				<p class="title4 link" id="showmore_takkr">Takk-r</p>
+				<p class="title5">Budapest, Hungary</p>
+			</div>
+		</div>
+
+		<div class="artists" id="artists_hoer">
+			<div class="row event-row">
+				<div class="col">
 					<a
-						class="about-link"
+						class="link"
 						target="_blank"
-						href="https://www.instagram.com/_andriy_kostyukov/"
-						>Andriy Kostyukov</a
+						href="https://www.youtube.com/watch?v=06qdp8iftgY&t=1s"
 					>
-					and
+						<img width="100%" src="/images/axtb2bandriykostyukov.jpg" />
+						<p class="title4 link">AXT B2B Andriy Kostyukov</p></a
+					>
+				</div>
+				<div class="col">
 					<a
-						class="about-link"
+						class="link"
 						target="_blank"
-						href="https://www.instagram.com/axtaxtaxtaxtaxtaxtaxtaxt/"
-						>AXT</a
-					>.
+						href="https://www.youtube.com/watch?v=06qdp8iftgY&t=1s"
+					>
+						<img width="100%" src="/images/JONAHPb2bEXAEL.jpg" />
+						<p class="title4 link">Jonah P. b2b Exael</p></a
+					>
+				</div>
+			</div>
+		</div>
+
+		<div class="artists" id="artists_refuge">
+			<div class="row event-row">
+				<div class="col">
+					<a
+						class="link"
+						target="_blank"
+						href="https://soundcloud.com/motsion-ua/on-refuge-worldwide-w-dasha-atom?si=60e12aa0b2e644f78bea8e43e9c62543&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+					>
+						<img width="100%" src="/images/dashaatom.png" />
+						<p class="title4 link">Dasha Atom</p></a
+					>
+				</div>
+				<div class="col">
+					<a
+						class="link"
+						target="_blank"
+						href="https://soundcloud.com/motsion-ua/on-refuge-worldwide-w-nyn?si=60e12aa0b2e644f78bea8e43e9c62543&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+					>
+						<img width="100%" src="/images/nyn.png" />
+						<p class="title4 link">n.y.n</p></a
+					>
+				</div>
+			</div>
+		</div>
+
+		<div class="artists_takkr" id="artists_takkr">
+			<div class="row event-row">
+				<div class="col">
+					<img width="100%" src="/images/lazycalmraga_takkr.png" />
+					<p class="title4 link">Lazy Calm Raga</p>
+				</div>
+				<div class="col">
+					<img width="100%" src="/images/erikkun_takkr.png" />
+					<p class="title4 link">Erik Kun</p>
+				</div>
+				<div class="col">
+					<img width="100%" src="/images/axt_takkr.png" />
+					<p class="title4 link">AXT</p>
+				</div>
+				<div class="col">
+					<img width="100%" src="/images/andriykostyukov_takkr.png" />
+					<p class="title4 link">Andriy Kostyukov</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-footer row" id="contact">
+			<div class="title1 col">
+				<p>Do you want to collaborate?</p>
+			</div>
+			<div class="title2 col">
+				<p>Please write to</p>
+				<p>
+					<a class="link" target="_blank" href="mailto:info.motsion@gmail.com"
+						>info.motsion@gmail.com</a
+					>
 				</p>
-				<p class="last-p">
-					The further you go — the more you observe — we'll guide you with
-					experimental sounds filled with textures, heavy low frequencies and
-					strong emotional charge.
+			</div>
+
+			<div class="socials">
+				<p>
+					<a
+						class="link"
+						target="_blank"
+						href="https://www.facebook.com/Motsionua"
+						><i class="fa-brands fa-facebook"></i
+					></a>
+					<a
+						class="link"
+						target="_blank"
+						href="https://www.instagram.com/motsion_ua/"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+					<a
+						class="link"
+						target="_blank"
+						href="https://soundcloud.com/motsion-ua"
+					>
+						<i class="fa-brands fa-soundcloud"></i
+					></a>
 				</p>
 			</div>
 		</div>
-		<footer class="down-footer">
-			<div class="social-media">
-				<a
-					class="footer-link"
-					target="_blank"
-					href="https://www.facebook.com/Motsionua"
-					>Facebook</a
-				>
-				<a
-					class="footer-link"
-					target="_blank"
-					href="https://www.instagram.com/motsion_ua/"
-					>Instagram</a
-				>
-				<a
-					class="footer-link"
-					target="_blank"
-					href="https://soundcloud.com/motsion-ua"
-					>SoundCloud</a
-				>
-			</div>
-		</footer>
 	</body>
+	<script>
+		const artists_hoer = document.querySelector("#artists_hoer");
+		const showmore_hoer = document.querySelector("#showmore_hoer");
+
+		artists_hoer.style.display = "none";
+
+		showmore_hoer.addEventListener("click", () => {
+			if (artists_hoer.style.display === "none") {
+				artists_hoer.style.display = "block";
+			} else {
+				artists_hoer.style.display = "none";
+			}
+		});
+
+		const artists_refuge = document.querySelector("#artists_refuge");
+		const showmore_refuge = document.querySelector("#showmore_refuge");
+
+		artists_refuge.style.display = "none";
+
+		showmore_refuge.addEventListener("click", () => {
+			if (artists_refuge.style.display === "none") {
+				artists_refuge.style.display = "block";
+			} else {
+				artists_refuge.style.display = "none";
+			}
+		});
+
+		const artists_takkr = document.querySelector("#artists_takkr");
+		const showmore_takkr = document.querySelector("#showmore_takkr");
+
+		artists_takkr.style.display = "none";
+
+		showmore_takkr.addEventListener("click", () => {
+			if (artists_takkr.style.display === "none") {
+				artists_takkr.style.display = "block";
+			} else {
+				artists_takkr.style.display = "none";
+			}
+		});
+	</script>
 </html>
